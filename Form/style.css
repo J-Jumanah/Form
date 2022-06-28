@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background: #FFF9EE;
+    color: rgba(0, 0, 0, 0.8);
+    display: grid;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 100vh;
+    justify-items: center;
+    width: 100vw;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "left right";
+    max-width: 900px;
+}
+
+.left-container {
+    background: #93AE57;
+    /* overflow: hidden; */
+    overflow: visible;
+    padding: 40px 0 0 0;
+    position: relative;
+    text-align: center;
+    width: 400px;
+}
+
+.left-container .left-img {
+    /* bottom: -5px; */
+    position: absolute;
+    text-align: center;
+}
+
+/* .left-container .left-img:before {
+    background: #807182;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+} */
+
+.left-container img {
+    width: 150%;
+    float: right;
+}
+
+.right-container {
+    background: #FFEFCA;
+    display: grid;
+    grid-template-areas: "."".";
+    width: 500px;
+    padding: 15px 15px 15px 15px;
+}
+
+/* .right-container .title {
+    background: #f9c7c2;
+    display: grid;
+    grid-template-areas: "."".";
+    width: 500px;
+} */
+
+.right-container #survey-form #name-label,
+#email-label,
+#age-label,
+#select-label,
+#radio-label,
+#check-label,
+#area-label {
+    display: block;
+    margin: 8px 0 5px 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.right-container #survey-form input[name=age] {
+    margin: 0 0 10px 23px;
+}
+
+.right-container #survey-form input[name=name],
+input[name=email],
+input[name=age],
+select {
+    width: 200px;
+    padding: 10px 10px;
+    margin: 0 0 10px 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: none;
+    font-size: 15px;
+}
+
+.right-container #survey-form [type=radio] {
+    margin: 0 10px 0 10px;
+}
+
+.right-container #survey-form [type=checkbox] {
+    margin: 0 10px 0 10px;
+}
+
+.right-container #survey-form textarea {
+    width: 60%;
+    padding: 12px 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.right-container #survey-form #submit {
+    float: right;
+    width: 120px;
+    padding: 10px;
+    border-radius: 50px;
+    background: #93AE57;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.right-container #survey-form #submit:hover {
+    background: #E1B953;
+}
